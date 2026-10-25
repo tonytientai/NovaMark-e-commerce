@@ -27,7 +27,7 @@ console.log("CORS DEBUG", {
   });
 app.use(
     cors({
-        origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(",").map((o) => o.trim()) : true,
+        origin: true,
         exposedHeaders: ["X-Total-Count", "X-Page", "X-Limit"],
     })
 );
