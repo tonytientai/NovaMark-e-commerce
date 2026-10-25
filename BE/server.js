@@ -21,7 +21,10 @@ import recommendationRoutes from "./routes/recommendation.routes.js";
 
 const app = express();
 const PORT = Number(process.env.PORT ?? 3000);
-
+console.log("CORS DEBUG", {
+    nodeEnv: process.env.NODE_ENV,
+    corsOrigin: process.env.CORS_ORIGIN ?? "(unset)",
+  });
 app.use(
     cors({
         origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(",").map((o) => o.trim()) : true,
