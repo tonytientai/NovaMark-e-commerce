@@ -1,0 +1,34 @@
+# Dependencies
+
+node_modules/
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# Generated Prisma Client
+
+/generated/prisma/
+
+# Logs
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build outputs
+
+dist/
+build/
+
+# OS / editor
+
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local database migration data
+
+migration-data.json
